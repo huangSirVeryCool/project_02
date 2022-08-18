@@ -1,0 +1,151 @@
+/* 注册页面css */
+.w {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+header {
+    height: 82px;
+    border-bottom: 2px solid #ca111a;
+}
+
+.logo a img {
+    padding-top: 15px;
+}
+
+/* 注册区 */
+.registerarea {
+    height: 465px;
+    border: 1px solid #dfdfdf;
+    margin-top: 25px;
+}
+
+/* 注册区标题 */
+.registerarea h3 {
+    height: 45px;
+    padding: 0px 10px;
+    border-bottom: 1px solid #dfdfdf;
+    font-size: 18px;
+    background-color: #ececec;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.registerarea h3 .login {
+    float: right;
+    font-size: 14px;
+}
+
+.registerarea h3 .login a {
+    color: #ca111a;
+}
+
+/* 内容 */
+.reg_from {
+    width: 600px;
+    margin: 50px auto 0;
+}
+
+.reg_from ul li {
+    margin-bottom: 20px;
+}
+
+.reg_from ul li label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.reg_from ul li .inp {
+    width: 240px;
+    height: 35px;
+}
+
+/* 右边的错误提示 */
+.reg_from ul li .error {
+    margin-left: 10px;
+    color: #ca111a;
+    font-size: 12px;
+}
+
+.error .error_icon,
+.success_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -2px;
+    background: url(../images/error.png);
+}
+
+/* 创建正确提示的样式，等以后学js之后可以修改 */
+.success {
+    margin-left: 10px;
+    color: green; 
+}
+
+.success_icon {
+    background: url(../images/success.png);
+}
+
+/* 密码下面的安全程度 */
+.safe {
+    margin-left: 162px;
+}
+
+.safe em {
+    color: #fff;
+    padding: 0px 12px;
+}
+
+.safe .ruo {
+    background-color: #e00900;
+}
+
+.safe .zhong {
+    background-color: #39ba36;
+}
+
+.safe .qiang {
+    background-color: #f99100;
+}
+
+/* 同意协议模块 */
+.agree {
+    padding-top: 20px;
+    margin-left: 92px;
+}
+
+.agree input[type=checkbox] {
+    vertical-align: middle;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+
+.btn {
+    width: 200px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border: 0px solid transparent;
+    color: #fff;
+    font-size: 14px;
+    background-color: #ca111a;
+    cursor: pointer;
+}
+
+/* 底部版权模块 */
+.mod_copyright {
+    text-align: center;
+}
+
+.mod_copyright .links {
+    margin: 12px 0px;
+}
+
+.mod_copyright .links a {
+    padding: 0px 6px;
+}

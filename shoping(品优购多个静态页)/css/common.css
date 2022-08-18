@@ -1,0 +1,364 @@
+/* 字体图标 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+/* 字体变色共用类 */
+.style_red {
+    color: #c81623;
+}
+
+/* 快捷导航栏 */
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+}
+
+/* 快捷导航栏 fl的意思是浮动左边 */
+.shortcut .fl {
+    float: left;
+    color: #666;
+}
+
+.shortcut .fl a:nth-of-type(2) {
+    color: #c81623;
+    font-size: 12px;
+}
+
+/* fr的意思是浮动右边 */
+.shortcut .fr {
+    float: right;
+}
+
+.shortcut .fr ul li {
+    float: left;
+}
+
+.shortcut .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    margin: 9px 15px 0px;
+    background-color: #666;
+}
+
+/* 添加文字图标，用after伪类在右边添加 */
+.arrow-icon::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+    margin-left: 5px;
+}
+
+/* 头部模块制作 */
+.header {
+    position: relative;
+    height: 105px;
+}
+
+/* logo制作 */
+.header .logo {
+    float: left;
+    width: 220px;
+    height: 61px;
+    margin: 21px 0px;
+}
+
+.header .logo h1 {
+    width: 171px;
+    height: 61px;
+}
+
+.header .logo h1 a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    font-size: 0px;
+    background: url(../images/logo.png) no-repeat;
+}
+
+/* 中间部位 */
+.header .middle-part {
+    float: left;
+    margin-top: 21px;
+    margin-left: 125px;
+}
+
+/* 中间部位搜索栏 */
+.header .middle-part .search input {
+    float: left;
+    width: 455px;
+    height: 35px;
+    padding-left: 10px;
+    border: 2px solid #c81623;
+    border-right: 1px solid transparent;
+    outline: #c81623;
+}
+
+.header .middle-part .search a {
+    float: left;
+    width: 85px;
+    height: 35px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    background-color: #c81623;
+    line-height: 35px;
+}
+
+/* 中间部位热搜词 */
+.header .middle-part .hotwrods {
+    margin-top: 10px;
+}
+
+.header .middle-part .hotwrods ul li {
+    float: left;
+    margin: 0px 12px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* 右边购物车 */
+.header .shopcar {
+    position: relative;
+    float: right;
+    width: 140px;
+    height: 35px;
+    margin-top: 21px;
+    margin-right: 65px;
+    border: 1px solid #dfdfdf;
+    text-align: center;
+    background-color: #f7f7f7;
+    line-height: 35px;
+}
+
+/* 左边文字图标购物车 */
+.header .shopcar::before {
+    font-family: 'icomoon';
+    content: '\e93a';
+    margin-right: 8px;
+}
+
+/* 右边文字图标 */
+.header .shopcar::after {
+    font-family: 'icomoon';
+    content: '\e920';
+    margin-left: 8px;
+}
+
+/* 浮动起来的8 */
+.count {
+    position: absolute;
+    top: -7px;
+    left: 100px;
+    height: 15px;
+    color: #fff;
+    padding: 0px 4px;
+    border-radius: 7px 7px 7px 0px;
+    background-color: #e60012;
+    line-height: 15px;
+}
+
+/* nav导航模块 */
+.nav {
+    border-bottom: 2px solid #b1191a;
+}
+
+/* 左边商品分类 */
+.nav .dropdown {
+    float: left;
+    width: 210px;
+    height: 45px;
+
+}
+
+/* 只要碰到dl就把dd显示出来 */
+.nav .dropdown dl:hover dd {
+    display: block;
+}
+
+/* dt标题 */
+.nav .dropdown dt {
+    width: 210px;
+    height: 100%;
+    margin-right: 12px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    background-color: #b1191a;
+    line-height: 45px;
+}
+
+.nav .dropdown dt:hover,
+.nav .dropdown dd {
+    display: block;
+}
+
+/* dd隐藏导航栏 */
+.nav .dropdown dd {
+    display: block;
+    width: 100%;
+    height: 465px;
+    margin-top: 2px;
+    background-color: #c81623;
+}
+
+.nav .dropdown dd ul li {
+    position: relative;
+    height: 31px;
+    margin-left: 2px;
+    color: #fff;
+    background-color: #c81623;
+}
+
+.nav .dropdown dd ul li:hover {
+    background-color: #fff;
+    color: #c81623;
+}
+
+/* ul里面的li从0到第12个添加伪类after字体图标 */
+.nav .dropdown dd ul li:nth-of-type(-n+12)::after {
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    font-family: 'icomoon';
+    content: '\e920';
+}
+
+.nav .dropdown dd ul li a {
+    padding-left: 12px;
+    color: #fff;
+    line-height: 31px;
+}
+
+.nav .dropdown dd ul li:hover a {
+    color: #c81623;
+}
+
+/* 右边导航栏 */
+.nav .navitems ul li {
+    float: left;
+    font-size: 16px;
+    line-height: 45px;
+}
+
+.nav .navitems ul li a {
+    padding: 0px 25px;
+}
+
+/* 选取最后一个li给字体改大小 */
+.nav .navitems ul li:last-child {
+    font-size: 14px;
+}
+
+/* 底部模块 */
+.footer {
+    height: 415px;
+    padding-top: 30px;
+    background-color: #f5f5f5;
+}
+
+.mod_service {
+    height: 80px;
+    border-bottom: 2px solid #ededed;
+}
+
+/* 服务模块 */
+.mod_service ul li {
+    float: left;
+    width: 240px;
+    padding-left: 35px;
+
+}
+
+/* 图标 */
+.mod_service ul li h2 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 8px;
+    background: url(../images/icons.png) no-repeat -251px -3px;
+}
+
+/* 使用精灵图给每个图标都换图*/
+.footer .mod_service ul li:nth-of-type(2) h2:nth-of-type(1) {
+    background: url(../images/icons.png) no-repeat -253px -54px;
+}
+
+.footer .mod_service ul li:nth-of-type(3) h2:nth-of-type(1) {
+    background: url(../images/icons.png) no-repeat -256px -105px;
+}
+
+.footer .mod_service ul li:nth-of-type(4) h2:nth-of-type(1) {
+    background: url(../images/icons.png) no-repeat -256px -156px;
+}
+
+.footer .mod_service ul li:nth-of-type(5) h2:nth-of-type(1) {
+    background: url(../images/icons.png) no-repeat -257px -208px;
+}
+
+/* 图片后面的字 */
+.mod_service ul li .service_txt h4 {
+    font-size: 14px;
+    color: #666;
+}
+
+.mod_service ul li .service_txt span {
+    font-size: 12px;
+    color: #666;
+}
+
+/* 帮助模块 */
+.mod_help {
+    height: 185px;
+    border-bottom: 2px solid #ededed;
+    padding-top: 25px;
+    padding-left: 72px;
+}
+
+.mod_help dl {
+    float: left;
+    width: 190px;
+}
+
+.mod_help dl:last-child {
+    width: 90px;
+    text-align: center;
+}
+
+.mod_help dl:last-child img {
+    width: 90px;
+}
+
+.mod_help dl dt {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* 版权模块 */
+.mod_copyright {
+    text-align: center;
+}
+
+.mod_copyright .links {
+    margin: 12px 0px;
+}
+
+.mod_copyright .links a {
+    padding: 0px 6px;
+}

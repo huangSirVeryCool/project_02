@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提交订单</title>
+    <!-- 引入初始化css -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 网站小图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入提交订单css -->
+    <link rel="stylesheet" href="css/order.css">
+    <!-- 导入公有css -->
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <!-- 快捷导航栏 -->
+    <section class="shortcut">
+        <div class="w">
+            <div class="fl">品优购欢迎你！
+                <a href="login.html">请登录 </a>
+                <a href="register.html"> 免费注册</a>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>我的订单</li>
+                    <li></li>
+                    <li class="arrow-icon">我的品优购</li>
+                    <li></li>
+                    <li>品优购会员</li>
+                    <li></li>
+                    <li>企业采购</li>
+                    <li></li>
+                    <li class="arrow-icon">关注品优购</li>
+                    <li></li>
+                    <li class="arrow-icon">客户服务</li>
+                    <li></li>
+                    <li class="arrow-icon">网站导航</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 头部模块 -->
+    <header class="order-header w clearfix">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="search">
+            <input type="search" name="" id="" placeholder="自营">
+            <a href="#">搜索</a>
+        </div>
+    </header>
+
+    <div class="dingdan w">填写并核对订单信息</div>
+    <!-- 页面主体 -->
+    <article class="main w">
+        <!-- 需要缩进的部分 -->
+        <div class="suojin">
+            <!-- 收件人 -->
+            <div class="recipient">
+                <section>
+                    <div>
+                        <h3>收件人信息</h3> <a href="#">新增收获地址</a>
+                    </div>
+                    <div><a href="#">张谋谋 北京 </a> 张谋谋 北京市海淀区三环内 中关村软件园9号楼 159****3201</div>
+                    <a href="#">更多地址 </a>
+                </section>
+                <section>
+                    <a href="#">匹配自提点</a> 时代思远书店 中关村软件园9号楼时代思远书店
+                </section>
+            </div>
+            <!-- 支付方式 -->
+            <div class="Payment">
+                <section>
+                    <div>
+                        <h3>支付方式</h3> <a href="#">新增收获地址</a>
+                    </div>
+                    <div><a href="#">货到付款 </a><a href="#">微信支付</a><a href="#">在线付款</a><a href="#">更多</a></div>
+                </section>
+            </div>
+            <!-- 送货清单 -->
+            <div class="send">
+                <section>
+                    <div>
+                        <h3>送货清单</h3>
+                    </div>
+                    <div class="huise">
+                        <h4>配送方式</h4>
+                        <a href="#">天天快递</a>配送时间：预计8月10日（周三）09:00-15:00送达<a href="#">修改</a>
+                    </div>
+                    <div class="fense">
+                        <h4>配送方式</h4>
+                        <div>
+                            <img src="upload/苹果订单.jpg" alt="">
+                            <div>Apple iPhone 6s (A1700) 64G 玫瑰金色 移动联通电信4G手机<br>硅胶透明防摔软壳 本色系列<br>
+                                <span class="style_red">7天无理由退货</span>
+                            </div>
+                            <div><i class="style_red">￥5399.00</i><span> X1</span><span> 有货</span></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 发票信息 -->
+        <div class="invoice">
+            <h3>发票信息</h3>
+            <div>普通发票（电子）<i> 个人</i><i>明细</i><a href="#"> 修改</a></div>
+            <a href="#">
+                <h3>使用优惠/抵用 </h3>
+            </a>
+        </div>
+        <!-- 优惠明细 -->
+        <div class="preferential">
+            <div class="you">
+                <div><span><i class="style_red">1</i>件商品，总商品金额：</span><em>¥5388.00</em></div>
+                <div><span>返现：</span><em>-¥0.00</em></div>
+                <div><span>运费：</span><em class="style_red">¥5388.00</em></div>
+            </div>
+        </div>
+        <!-- 总额 -->
+        <div class="total">
+            <div>
+                <div>应付总额 ：<em class="style_red">¥5388.00</em></div>
+                <div>寄送至：北京市海淀区三环内 中关村软件园9号楼  收货人：某某某  159****3201</div>
+            </div>
+        </div>
+
+        <div class="tijiao">
+            <a href="#" >提交订单</a>
+        </div>
+
+    </article>
+
+    <!-- 底部模块 -->
+    <footer class="footer">
+        <div class="w">
+            <!-- 服务模块 -->
+            <div class="mod_service clearfix">
+                <ul>
+                    <li>
+                        <h2></h2>
+                        <div class="service_txt">
+                            <h4>正品保障</h4>
+                            <span>正品保障，提供发票</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h2></h2>
+                        <div class="service_txt">
+                            <h4>极速物流</h4>
+                            <span>极速物流，极速送达</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h2></h2>
+                        <div class="service_txt">
+                            <h4>无忧售后</h4>
+                            <span>7天无理由退换货</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h2></h2>
+                        <div class="service_txt">
+                            <h4>特色服务</h4>
+                            <span>私人订制家电套餐</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h2></h2>
+                        <div class="service_txt">
+                            <h4>帮助中心</h4>
+                            <span>您的购物指南</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 帮助模块 -->
+            <div class="mod_help">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <img src="images/wx_cz.jpg" alt="">
+                    <dd>本人微信</dd>
+                </dl>
+            </div>
+            <!-- 版权模块 -->
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="#">关于我们</a>|<a href="#">练习我们</a>|<a href="#">练习客服</a>|<a href="#">商家入驻</a>|<a
+                        href="#">营销中心</a>|<a href="#">手机品优购</a>|<a href="#">友情链接</a>|<a href="#">销售联盟</a>|<a
+                        href="#">品优购社区</a>|<a href="#">品优购公益</a>|<a href="#">English Site</a>|<a href="#">Contact U</a>
+                </div>
+                <div class="copyright">地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱:
+                    zhanghj+itcast.cn<br>
+                    京ICP备08001421号京公网安备110108007702</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

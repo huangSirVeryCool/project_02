@@ -1,0 +1,226 @@
+/* 首页css样式 */
+/* bootstrap默认的container最大宽度是1170px，可是我们的设计稿是要1280px
+所以要给他用媒体查询把超过1170px宽度的情况下使用1280px的宽度 */
+
+/* 屏幕超过1280px宽度的时候给container的宽度设置为1280px */
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+/* 取消a链接的下面线 */
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* 左边部分 */
+
+/* logo图片 */
+.nav {
+    background-color: #eee;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo {
+    background-color: #3694da;
+}
+
+/* 给logo图片设置为最大为100% */
+.logo img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* 再给他设置在最小的屏幕下，也就是xs的屏幕下不显示 */
+/* 创建一个span在图片不显示的时候代替logo */
+.logo span {
+    display: block;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* 下面的导航栏文字 */
+
+/* 给nav导航栏设置在小屏以下的时候让里面的li浮动起来并且每个宽度占百分之20% */
+@media screen and (max-width: 969px) {
+    .nav ul li {
+        float: left;
+        width: 20%;
+    }
+
+    /* 在小屏幕下中间的部分距离上面需要有一点距离 */
+    article {
+        margin-top: 10px;
+    }
+}
+
+/* 在超小屏幕下，导航栏的字显得有点太大了，设置在超小屏幕下的字体缩小一点 */
+@media screen and (max-width: 749px) {
+    .nav ul li a {
+        font-size: 13px !important;
+        /*权重不够，所以加!important增加权重 */
+    }
+
+    /* 在超小屏幕下给新闻图片的宽度修改一下 */
+    .news ul li:nth-child(1) {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+
+    .news ul li {
+        width: 50% !important;
+    }
+
+    /* 在超小屏幕下给出版左边的h3文字大小设置的小一点 */
+    .zuo h3 {
+        font-size: 15px;
+    }
+}
+
+.nav ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background-color: #eeeeee;
+    color: #666666 !important;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.nav ul li a:hover {
+    text-decoration: none;
+    background-color: #fff;
+}
+
+/* 小图标是用before做出来的，所以给a的before修改对齐方式就可以了 */
+.nav ul li a::before {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* 中间上面图片部分 */
+.news {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.news ul li {
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 10px;
+}
+
+.news ul li:first-child {
+    width: 50%;
+    height: 266px;
+}
+
+
+
+.news ul li a {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.news ul li a img {
+    width: 100%;
+    height: 100%;
+}
+
+.news ul li a p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    height: 41px;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, .4);
+    color: #fff;
+    font-size: 12px;
+
+}
+
+.news ul li:nth-child(2),
+.news ul li:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+/* 给第一个li里面的p修改样式 */
+.news ul li:first-child a p {
+    font-size: 18px;
+    line-height: 35px;
+}
+
+/* 中间下面的出版 */
+
+.publish-row {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+}
+
+/* 左边的文字部分 */
+.zuo {
+    padding-left: 0;
+}
+
+.zuo p {
+    margin: 10px 0;
+}
+
+.zuo div {
+    color: #777;
+}
+
+/* 右边的图片部分 */
+.you {
+    padding-right: 0;
+}
+
+.you img {
+    width: 100%;
+}
+
+/* 右边部分 */
+.banner img {
+    width: 100%;
+}
+
+
+.hot {
+    position: relative;
+    margin-top: 20px;
+    padding: 0 20px 25px 20px;
+    border: 1px solid #ccc;
+}
+
+.hot span {
+    /* margin-left: 15px; */
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+.hot div {
+    font-size: 12px;
+}
+
+.hot a:hover {
+    text-decoration: none;
+}

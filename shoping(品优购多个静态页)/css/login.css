@@ -1,0 +1,165 @@
+/* 登录私有css */
+
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+/* 头部logo */
+content {
+    height: 82px;
+}
+
+.header {
+    margin-bottom: 10px;
+}
+
+.logo a img {
+    padding-top: 15px;
+}
+
+/* 登录区 */
+.content {
+    height: 485px;
+    background-color: #7f00ff;
+}
+
+.content .w>img {
+    height: 485px;
+}
+
+.banXin {
+    position: relative;
+}
+
+.loginbar {
+    position: absolute;
+    top: 60px;
+    right: 116px;
+    width: 380px;
+    height: 360px;
+    padding: 0px 35px;
+    background-color: #ffffff;
+}
+
+/* 第一个Li里面的a */
+.loginbar ul li:nth-child(1) {
+    margin: 18px 0px;
+    height: 25px;
+}
+
+.loginbar ul li:nth-child(1) a {
+    font-size: 18px;
+    height: 25px;
+    line-height: 28.73px
+}
+
+.loginbar ul li:nth-child(1) a:first-child {
+    float: left;
+    margin-left: 5px;
+}
+
+.loginbar ul li:nth-child(1) span {
+    display: inline-block;
+    width: 1px;
+    height: 25px;
+    margin-left: 76px;
+    background-color: #ededed;
+}
+
+.loginbar ul li:nth-child(1) a:last-child {
+    float: right;
+    margin-right: 5px;
+    color: #c81623;
+}
+
+/* 第二个li */
+.loginbar ul li:nth-child(2) {
+    width: 100%;
+    height: 26px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border: 1px solid #f5eecd;
+    background-color: #fffded;
+    line-height: 26px;
+}
+
+.loginbar ul li:nth-child(3),
+.loginbar ul li:nth-child(4) {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.loginbar ul li:nth-child(3) img,
+.loginbar ul li:nth-child(4) img {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    width: 37px;
+    height: 33px;
+}
+
+.loginbar ul li:nth-child(3) input,
+.loginbar ul li:nth-child(4) input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding-left: 50px;
+    color: #b2b2b2;
+    border: 1px solid #bbbaba;
+}
+
+.loginbar ul li:nth-child(3) input:focus,
+.loginbar ul li:nth-child(4) input:focus {
+    border: 1px solid #32a1e7;
+}
+
+.loginbar ul li:nth-child(5) {
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.loginbar ul li:nth-child(5) div {
+    float: left;
+}
+
+.loginbar ul li:nth-child(5) div input {
+    vertical-align: middle;
+}
+
+.loginbar ul li:nth-child(5) a {
+    float: right;
+    color: #333333;
+    line-height: 20px;
+}
+
+.loginbar ul li:nth-child(6) a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 25px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    background-color: #ca111a;
+    line-height: 40px;
+}
+
+.loginbar ul li:nth-child(7) {
+    height: 30px;
+}
+
+.loginbar ul li:nth-child(7) img {
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+.loginbar ul li:nth-child(7) a {
+    color: #1474af;
+    font-size: 14px;
+    line-height: 30px;
+}

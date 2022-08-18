@@ -1,0 +1,117 @@
+/* 列表页专有Css */
+
+/* 秒杀图片 */
+.sk {
+    position: absolute;
+    height: 32px;
+    left: 185px;
+    top: 35px;
+    padding:3px 0px 0px 15px;
+    border-left: 1px solid #b1191a;
+}
+/* 导航模块左边盒子 */
+.sk_list {
+    float: left;
+    height: 45px;
+}
+.sk_list ul li  {
+    float: left;
+    padding: 0px 30px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 45px;
+}
+/* 右边盒子 */
+.sk_con {
+    float: left;
+}
+.sk_con ul li {
+    float: left;
+    padding: 0px 22px;
+    font-size: 14px;
+    line-height: 49px;
+}
+/* 给最后一个小Li添加一个下标字体图标 */
+.sk_con ul li:last-child a::after {
+    font-family: 'icomoon';
+    content: '\e91e';
+}
+/* 把图片的高度和宽度都设死。避免因为图片大小的原因导致布局错乱 */
+.sk_hd {
+    width: 1200px;
+    height: 120px;
+}
+.sk_hd img {
+    width: 1200px;
+    height: 120px;
+}
+
+/* 手机内容 */
+.sk_bd ul li {
+    float: left;
+    width: 290px;
+    height: 460px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.sk_bd ul li .red-bb {
+    border: 1px solid transparent;
+    
+}
+.sk_bd ul li .red-bb:hover {
+    border: 1px solid #b1191a;
+    border-bottom: 1px solid transparent;
+}
+.iphone-bd {
+    margin: 6px 10px 7px 10px;
+}
+.iphone-bd div:nth-child(1) {
+    font-size: 13px;
+}
+.iphone-bd span:nth-child(2) {
+    display: inline-block;
+    margin: 6px 0px;
+    color: #b1191a;
+    font-size: 22px;
+}
+.iphone-bd del {
+    margin-left: 5px;
+    font-size: 14px;
+}
+.iphone-bd div:nth-of-type(2) {
+    font-size: 13px;
+}
+/* 进度条制作:给进度条div父亲添加相对定位，然后再给i添加绝对定位，这样i就不会乱走。 */
+.iphone-bd div:nth-of-type(2) div {
+    position: relative;
+    display: inline-block;
+    width: 135px;
+    height: 12px;
+    border: 1px solid #b1191a;
+    border-radius: 12px;
+    line-height: 12px;
+}
+.iphone-bd div:nth-of-type(2) div i {
+    transition: all 1s;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    width: 70px;
+    height: 11px;
+    border-radius: 15px;
+    background-color: #b1191a;
+    
+}
+.iphone-bd div:nth-of-type(2) div:hover i {
+    width: 120px;
+}
+.sk_bd ul li>a{
+    display: block;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    background-color: #b1191a;
+    line-height: 50px;
+}

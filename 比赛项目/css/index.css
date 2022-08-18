@@ -1,0 +1,289 @@
+/* 首页css文件 */
+/* 版心1200 */
+.w {
+	width: 1200px;
+	margin: 0px auto;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+body {
+}
+ul {
+	list-style: none;
+}
+
+/* 头部制作 */
+.hear {
+	height: 150px;
+	background: url(../images/头部背景.png) no-repeat top center;
+}
+.hears {
+	display: flex;
+}
+.logo {
+	flex: 2;
+	float: left;
+	height: 150px;
+}
+.logo img {
+	width: 200px;
+	height: 150px;
+}
+/* 右边的 */
+.topright {
+	flex: 2;
+	overflow: hidden;
+	margin-top: 10px;
+	padding-top: 1px;
+	float: right;
+}
+.login {
+	float: right;
+}
+.login a {
+	color: black;
+}
+.login a:hover {
+	color: #1a73e8;
+}
+/* 搜索 */
+.search {
+	display: flex;
+	flex: 6;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.search input {
+	width: 455px;
+	height: 35px;
+	border: 1px solid #1a73e8;
+	outline: none;
+}
+.search-a {
+	display: inline-block;
+	width: 85px;
+	height: 35px;
+	background-color: #1a73e8;
+	color: #fff;
+	text-align: center;
+	font-size: 17px;
+	line-height: 35px;
+}
+.titles {
+	display: flex;
+	margin-top: 20px;
+	color: black;
+	font-size: 22px;
+}
+.titles:hover {
+	color: #1a73e8;
+}
+/* 导航栏 */
+.nav {
+	background-color: #1a73e8;
+}
+.nav .navs {
+	height: 50px;
+	display: flex;
+}
+.navs1 {
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+}
+.navs1 {
+}
+.navs1>a {
+	display: inline-block;
+	height: 50px;
+	padding: 0 30px;
+	color: #fff;
+}
+/* 隐藏的导航栏 */
+.navs1 .navs2 {
+	position: relative;
+	background-color: #1a73e8;
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+}
+.navs2 a {
+	color: #fff;
+}
+.navs2-none {
+	display: none;
+}
+/* 广告 */
+.banner {
+	margin: 10px auto;
+}
+.banner img {
+	width: 100%;
+}
+/* 版权信息 */
+.mod_copyright {
+	height: 120px;
+	background-color: #1a73e8;
+	color: #fff;
+}
+.copyright-left {
+	float: left;
+	margin-right: 150px;
+}
+.copyright-left div {
+	margin: 15px 0px;
+}
+.copyright-right {
+	float: left;
+}
+.copyright-right div {
+	margin: 15px 0px;
+}
+.copyright-img {
+	float: right;
+}
+.copyright-img img {
+	height: 120px;
+}
+/* 资讯模块 */
+.news {
+	display: flex;
+	height:400px;
+	margin-bottom: 10px;
+}
+/* 左边热点 */
+.hot {
+	flex: 3;
+	background-color: #e7f4fd;
+	margin-right: 20px;
+}
+.hot a {
+	color: black;
+}
+.hot a:hover {
+	color: red;
+	text-decoration: underline;
+}
+.hot-con {
+	padding: 15px;
+}
+.hot-con img {
+	width: 345px;
+	height: 230px;
+}
+.hot-con div {
+	margin-top: 8px;
+	text-indent: 2em;
+}
+.list {
+	flex: 7;
+	background-color: #e7f4fd;
+}
+/* 右边tab栏 */
+.tab-list {
+	overflow: hidden;
+	padding: 20px 0 0 20px;
+}
+.tab-list{
+	
+}
+.tab-list ul li {
+	float: left;
+	width: 120px;
+	height: 40px;
+	margin-right: 10px;
+	background-color: #cccccc;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.tab-con {
+	padding: 0 15px 20px 15px;
+}
+/* tab栏的内容 */
+.item {
+	display: none;
+}
+.item h3 {
+	margin: 5px;
+}
+.item ul li {
+	margin: 20px 0;
+}
+.item ul li a {
+	position: relative;
+	color: black;
+	font-size: 18px;
+	padding-left: 20px;
+}
+.item ul li a:hover {
+	color: red;
+}
+.item ul li a::before {
+	position: absolute;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	left: 0px;
+	top: 8px;
+	content: '';
+	border-radius: 10px;
+	background-color: red;
+}
+.item ul li span {
+	float: right;
+}
+/* 图片展示 */
+.icon {
+	/* 清楚浮动 */
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+.icon ul {
+	display: flex;
+	justify-content: space-between;
+}
+.icon ul li {
+	float: left;
+}
+.icon ul li a {
+	/* 溢出隐藏 */
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	width: 170px;
+	height: 230px;
+}
+.icon ul li a img {
+	width: 100%;
+	height: 100%;
+	/* 设置中心点为中间 */
+	transform-origin: 50% 50%;
+	/* 添加过渡效果 */
+	transition: all .3s;
+}
+.icon ul li a img:hover {
+	/* 2D转换放大1.3倍数 */
+	transform: scale(1.3,1.3);
+}
+.icon ul li a div {
+	/* 用绝对定位,定位到最下面 */
+	position: absolute;
+	width: 100%;
+	height: 20px;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+}

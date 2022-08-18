@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄先生大项目-主页面</title>
+    <!-- 网站说明 -->
+    <meta name="dsescription" content="黄先生做的项目-学习做的项目、练习">
+    <!-- 关键字 -->
+    <meta name="keywords" content="网上购物，数码，维修">
+    <!-- 网站小图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 导入初始化css -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 导入公有css -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 导入jquery的css -->
+    <script src="js/jQuery.min.js"></script>
+    <!-- 导入主页面的css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- 快捷导航栏 -->
+    <section class="shortcut">
+        <div class="w">
+            <div class="fl">品优购欢迎你！
+                <a href="login.html">请登录 </a>
+                <a href="register.html"> 免费注册</a>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>我的订单</li>
+                    <li></li>
+                    <li class="arrow-icon">我的品优购</li>
+                    <li></li>
+                    <li>品优购会员</li>
+                    <li></li>
+                    <li>企业采购</li>
+                    <li></li>
+                    <li class="arrow-icon">关注品优购</li>
+                    <li></li>
+                    <li class="arrow-icon">客户服务</li>
+                    <li></li>
+                    <li class="arrow-icon">网站导航</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 头部模块 -->
+    <header class="header w clearfix">
+        <!-- 左边logo -->
+        <div class="logo">
+            <h1>
+                <a href="index.html" title="品优购">品优购</a>
+            </h1>
+        </div>
+        <!-- 中间部位 -->
+        <div class="middle-part">
+            <!-- 搜索框模块-->
+            <div class="search clearfix">
+                <input type="search" placeholder="语言开发">
+                <a href="#">确定</a>
+            </div>
+            <!-- 热搜词 -->
+            <div class="hotwrods clearfix">
+                <ul>
+                    <li><a href="#" class="style_red">优惠购首发</a></li>
+                    <li><a href="#">亿元优惠</a></li>
+                    <li><a href="#">9.9元团购</a></li>
+                    <li><a href="#">美满99减30</a></li>
+                    <li><a href="#">办公用品</a></li>
+                    <li><a href="#">电脑</a></li>
+                    <li><a href="#">通信</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 右边购物车 -->
+        <a href="order.html">
+            <div class="shopcar">
+                我的购物车
+                <i class="count">8</i>
+            </div>
+        </a>
+    </header>
+
+    <!-- nav导航模块 -->
+    <nav class="nav">
+        <!-- 版心 -->
+        <div class="w clearfix">
+            <!-- 左侧全部商品分类 -->
+            <div class="dropdown">
+                <!-- 分为dt标题和dd，只要光标在dt上dd就会显示出来 -->
+                <dl>
+                    <dt>全部商品分类</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="#">家用电器</a></li>
+                            <li><a href="list.html">手机</a>、<a href="#">数码</a></li>
+                            <li><a href="#">电脑</a>、<a href="#">办公</a></li>
+                            <li><a href="#">家居</a>、<a href="#">家具</a>、<a href="#">家装</a>、<a href="#">厨具</a></li>
+                            <li><a href="#">男装</a>、<a href="#">女装</a>、<a href="#">童装</a>、<a href="#">内衣</a></li>
+                            <li><a href="#">个户化妆</a>、<a href="#">清洁用户</a>、<a href="#">宠物</a></li>
+                            <li><a href="#">鞋靴</a>、<a href="#">箱包</a>、<a href="#">珠宝</a>、<a href="#">奢侈品</a></li>
+                            <li><a href="#">运动户外</a>、<a href="#">钟表</a></li>
+                            <li><a href="#">汽车</a>、<a href="#">汽车用户</a></li>
+                            <li><a href="#">母婴</a>、<a href="#">玩具乐器</a></li>
+                            <li><a href="#">食品</a>、<a href="#">酒类</a>、<a href="#">生鲜</a>、<a href="#">特产</a></li>
+                            <li><a href="#">医药保健</a></li>
+                            <li><a href="#">图像</a>、<a href="#">音像</a>、<a href="#">电子书</a></li>
+                            <li><a href="#">彩票</a>、<a href="#">旅行</a>、<a href="#">充值</a>、<a href="#">票务</a></li>
+                            <li><a href="#">理财</a>、<a href="#">众筹</a>、<a href="#">白条</a>、<a href="#">保险</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <!-- 右侧导航栏组 -->
+            <div class="navitems">
+                <ul>
+                    <li><a href="#">服装城 </a></li>
+                    <li><a href="#">美妆馆</a></li>
+                    <li><a href="#">传智超市</a></li>
+                    <li><a href="#">全球购</a></li>
+                    <li><a href="#">闪购</a></li>
+                    <li><a href="#">团购</a></li>
+                    <li><a href="#">拍卖</a></li>
+                    <li><a href="#">有趣</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main主页面 -->
+    <div class="w">
+        <div class="main">
+            <!-- 左边轮播图 -->
+            <div class="focus">
+                <!-- 图片部分 -->
+                <a href="javascript:;" class="arrow-l">←</a>
+                <a href="javascript:;" class="arrow-r">→</a>
+                <ul class="focus-img">
+                    <li>
+                        <a href="#"><img data-lazy-src="images/汤姆.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img data-lazy-src="images/黄汤姆.bmp" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img data-lazy-src="images/蓝汤姆.bmp" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img data-lazy-src="images/粉汤姆.jpg" alt=""></a>
+                    </li>
+                </ul>
+                <!-- 小圆点 -->
+                <ol class="round">
+                </ol>
+            </div>
+            <!-- 右边新闻快报模块 -->
+            <div class="newsflash">
+                <!-- 新闻模块 -->
+                <div class="news">
+                    <h4>品优购快报</h4>
+                    <div class="news-bd">
+                        <ul>
+                            <li><a href="#"><strong>【特惠】</strong>备战开学季 全民半价购数码 全民半价购数码</a></li>
+                            <li><a href="#"><strong>【特惠】</strong>备战开学季 全民半价购数码</a></li>
+                            <li><a href="#"><strong>【特惠】</strong>备战开学季 全民半价购数码</a></li>
+                            <li><a href="#"><strong>【特惠】</strong>备战开学季 全民半价购数码</a></li>
+                            <li><a href="#"><strong>【特惠】</strong>备战开学季 全民半价购数码 全民半价购数码</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 生活服务模块 -->
+                <div class="lifeservice">
+                    <ul>
+                        <!-- 第一排 -->
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                话费
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                机票
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                电影票
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                游戏
+                            </a>
+                        </li>
+                        <!-- 第二排 -->
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                彩票
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                加油卡
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                酒店
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                火车票
+                            </a>
+                        </li>
+                        <!-- 第三排 -->
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                众筹
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                理财
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                礼品卡
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                白条
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 特价商品 -->
+                <div class="bargain">
+                    <img data-lazy-src="upload/bargain.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 推荐模块 -->
+    <div class="recom w">
+        <!-- 推荐模块左边 -->
+        <div class="recom-hd">
+            <img data-lazy-src="images/clock.png" alt="">
+            <p>今日推荐</p>
+        </div>
+        <!-- 右边 -->
+        <div class="recom-bd">
+            <ul>
+                <li>
+                    <img data-lazy-src="upload/recom_03.jpg" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/recom_03.jpg" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/recom_03.jpg" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/recom_03.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 猜你喜欢模块 -->
+    <div class="guess w">
+        <!-- 头部 -->
+        <div class="guess-hd">
+            <h2>猜你喜欢</h2>
+            <p>换一批</p>
+        </div>
+        <!-- 身体 -->
+        <div class="guess-bd">
+            <ul>
+                <li>
+                    <img data-lazy-src="upload/guess1.jpg" alt="">
+                    <a href="#" class="introduce">
+                        阳光美包新款单肩包女<br>
+                        包时尚子母包四件套女
+                        <p>¥116.00</p>
+                    </a>
+                </li>
+                <li>
+                    <img data-lazy-src="upload/guess1.jpg" alt="">
+                    <a href="#" class="introduce">
+                        阳光美包新款单肩包女<br>
+                        包时尚子母包四件套女
+                        <p>¥116.00</p>
+                    </a>
+                </li>
+                <li>
+                    <img data-lazy-src="upload/guess1.jpg" alt="">
+                    <a href="#" class="introduce">
+                        阳光美包新款单肩包女<br>
+                        包时尚子母包四件套女
+                        <p>¥116.00</p>
+                    </a>
+                </li>
+                <li>
+                    <img data-lazy-src="upload/guess1.jpg" alt="">
+                    <a href="#" class="introduce">
+                        阳光美包新款单肩包女<br>
+                        包时尚子母包四件套女
+                        <p>¥116.00</p>
+                    </a>
+                </li>
+                <li>
+                    <img data-lazy-src="upload/guess1.jpg" alt="">
+                    <a href="#" class="introduce">
+                        阳光美包新款单肩包女<br>
+                        包时尚子母包四件套女
+                        <p>¥116.00</p>
+                    </a>
+                </li>
+                <li>
+                    <img data-lazy-src="upload/guess1.jpg" alt="">
+                    <a href="#" class="introduce">
+                        阳光美包新款单肩包女<br>
+                        包时尚子母包四件套女
+                        <p>¥116.00</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 楼层区模块 -->
+    <div class="floor">
+        <!-- 家电区 -->
+        <div class="w jiadian">
+            <!-- 头部 -->
+            <div class="box_hd">
+                <h3>家用电器</h3>
+                <!-- 这里添加一个div盒子是为了做tab栏，需要一个选项栏 -->
+                <div class="tab_list">
+                    <ul>
+                        <li><a href="#" class="style_red">热门</a>|</li>
+                        <li><a href="#">大家电</a>|</li>
+                        <li><a href="#">生活电器</a>|</li>
+                        <li><a href="#">厨房电器</a>|</li>
+                        <li><a href="#">个护健康</a>|</li>
+                        <li><a href="#">应季电器</a>|</li>
+                        <li><a href="#">空气/净水</a>|</li>
+                        <li><a href="#">新奇特</a>|</li>
+                        <li><a href="#">高端电器</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 身体 -->
+            <div class="box_bd">
+                <!-- 身体里面tab栏的内容 -->
+                <div class="tab_content">
+                    <!-- 身体里面tab栏的内容里面的item对应tab_list的第一个热门 -->
+                    <div class="tab_list_item">
+                        <div>
+                            <ul>
+                                <li><a href="#">节能补贴</a></li>
+                                <li><a href="#">4k电视</a></li>
+                                <li><a href="#">空气净化器</a></li>
+                                <li><a href="#">IH电饭煲</a></li>
+                                <li><a href="#">滚筒洗衣机</a></li>
+                                <li><a href="#">电热水器</a></li>
+                            </ul>
+                            <a href="#"><img data-lazy-src="upload/floor-1-1.png" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#"><img data-lazy-src="upload/floor-1-b01.png" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#" class="bk"><img data-lazy-src="upload/floor-1-2.png" alt=""></a>
+                            <a href="#"><img data-lazy-src="upload/floor-1-3.png" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#"><img data-lazy-src="upload/floor-1-4.png" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#" class="bk"><img data-lazy-src="upload/floor-1-5.png" alt=""></a>
+                            <a href="#"><img data-lazy-src="upload/floor-1-6.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 手机区 -->
+        <div class="w shouji">
+            <!-- 头部 -->
+            <div class="box_hd">
+                <h3>手机通讯</h3>
+                <!-- 这里添加一个div盒子是为了做tab栏，需要一个选项栏 -->
+                <div class="tab_list">
+                    <ul>
+                        <li><a href="#" class="style_red">热门</a>|</li>
+                        <li><a href="#">大家电</a>|</li>
+                        <li><a href="#">生活电器</a>|</li>
+                        <li><a href="#">厨房电器</a>|</li>
+                        <li><a href="#">个护健康</a>|</li>
+                        <li><a href="#">应季电器</a>|</li>
+                        <li><a href="#">空气/净水</a>|</li>
+                        <li><a href="#">新奇特</a>|</li>
+                        <li><a href="#">高端电器</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 身体 -->
+            <div class="box_bd">
+                <!-- 身体里面tab栏的内容 -->
+                <div class="tab_content">
+                    <!-- 身体里面tab栏的内容里面的item对应tab_list的第一个热门 -->
+                    <div class="tab_list_item">
+                        <div>
+                            <ul>
+                                <li><a href="#">节能补贴</a></li>
+                                <li><a href="#">4k电视</a></li>
+                                <li><a href="#">空气净化器</a></li>
+                                <li><a href="#">IH电饭煲</a></li>
+                                <li><a href="#">滚筒洗衣机</a></li>
+                                <li><a href="#">电热水器</a></li>
+                            </ul>
+                            <a href="#"><img data-lazy-src="upload/floor-1-1.png" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#"><img data-lazy-src="upload/floor-1-b01.png" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#" class="bk"><img data-lazy-src="upload/floor-1-2.png" alt=""></a>
+                            <a href="#"><img data-lazy-src="upload/floor-1-3.png" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#"><img data-lazy-src="upload/floor-1-4.png" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#" class="bk"><img data-lazy-src="upload/floor-1-5.png" alt=""></a>
+                            <a href="#"><img data-lazy-src="upload/floor-1-6.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 电脑区 -->
+        <div class="w diannao">
+            <!-- 头部 -->
+            <div class="box_hd">
+                <h3>电脑办公</h3>
+                <!-- 这里添加一个div盒子是为了做tab栏，需要一个选项栏 -->
+                <div class="tab_list">
+                    <ul>
+                        <li><a href="#" class="style_red">热门</a>|</li>
+                        <li><a href="#">大家电</a>|</li>
+                        <li><a href="#">生活电器</a>|</li>
+                        <li><a href="#">厨房电器</a>|</li>
+                        <li><a href="#">个护健康</a>|</li>
+                        <li><a href="#">应季电器</a>|</li>
+                        <li><a href="#">空气/净水</a>|</li>
+                        <li><a href="#">新奇特</a>|</li>
+                        <li><a href="#">高端电器</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 身体 -->
+            <div class="box_bd">
+                <!-- 身体里面tab栏的内容 -->
+                <div class="tab_content">
+                    <!-- 身体里面tab栏的内容里面的item对应tab_list的第一个热门 -->
+                    <div class="tab_list_item">
+                        <div>
+                            <ul>
+                                <li><a href="#">节能补贴</a></li>
+                                <li><a href="#">4k电视</a></li>
+                                <li><a href="#">空气净化器</a></li>
+                                <li><a href="#">IH电饭煲</a></li>
+                                <li><a href="#">滚筒洗衣机</a></li>
+                                <li><a href="#">电热水器</a></li>
+                            </ul>
+                            <a href="#"><img data-lazy-src="upload/floor-1-1.png" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#"><img data-lazy-src="upload/floor-1-b01.png" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#" class="bk"><img data-lazy-src="upload/floor-1-2.png" alt=""></a>
+                            <a href="#"><img data-lazy-src="upload/floor-1-3.png" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#"><img data-lazy-src="upload/floor-1-4.png" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#" class="bk"><img data-lazy-src="upload/floor-1-5.png" alt=""></a>
+                            <a href="#"><img data-lazy-src="upload/floor-1-6.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 固定电梯导航 -->
+    <div class="fixedtool">
+        <ul>
+            <li class="current">家用电器</li>
+            <li>手机通讯</li>
+            <li>电脑办公</li>
+        </ul>
+    </div>
+
+    <!-- 底部模块 -->
+    <footer class="footer">
+        <div class="w">
+            <!-- 服务模块 -->
+            <div class="mod_service clearfix">
+                <ul>
+                    <li>
+                        <h2></h2>
+                        <div class="service_txt">
+                            <h4>正品保障</h4>
+                            <span>正品保障，提供发票</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h2></h2>
+                        <div class="service_txt">
+                            <h4>极速物流</h4>
+                            <span>极速物流，极速送达</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h2></h2>
+                        <div class="service_txt">
+                            <h4>无忧售后</h4>
+                            <span>7天无理由退换货</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h2></h2>
+                        <div class="service_txt">
+                            <h4>特色服务</h4>
+                            <span>私人订制家电套餐</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h2></h2>
+                        <div class="service_txt">
+                            <h4>帮助中心</h4>
+                            <span>您的购物指南</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 帮助模块 -->
+            <div class="mod_help">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <img data-lazy-src="images/wx_cz.jpg" alt="">
+                    <dd>本人微信</dd>
+                </dl>
+            </div>
+            <!-- 版权模块 -->
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="#">关于我们</a>|<a href="#">练习我们</a>|<a href="#">练习客服</a>|<a href="#">商家入驻</a>|<a
+                        href="#">营销中心</a>|<a href="#">手机品优购</a>|<a href="#">友情链接</a>|<a href="#">销售联盟</a>|<a
+                        href="#">品优购社区</a>|<a href="#">品优购公益</a>|<a href="#">English Site</a>|<a href="#">Contact U</a>
+                </div>
+                <div class="copyright">地址：广东省粤东技师学院 邮编：100096 电话：147****0132 传真：010-82935100 邮箱:
+                    1504225820@qq.com<br>
+                    京ICP备08001421号京公网安备110108007702</div>
+            </div>
+        </div>
+    </footer>
+    <!-- 导入动画css -->
+    <script src="js/animate.js"></script>
+    <!-- 导入首页css -->
+    <script src="js/index.js"></script>
+    <script src="js/EasyLazyload.min.js"></script>
+    <script>
+        lazyLoadInit({
+            showTime: 1100,
+            onLoadBackEnd: function (i, e) {
+                console.log("onLoadBackEnd:" + i);
+            }
+            , onLoadBackStart: function (i, e) {
+                console.log("onLoadBackStart:" + i);
+            }
+        });
+    </script>
+</body>
+
+</html>
